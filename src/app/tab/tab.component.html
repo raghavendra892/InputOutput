@@ -1,0 +1,118 @@
+<!-- 1 -->
+
+
+<ul class="nav nav-pills">
+    <li class="nav nav-item">
+        <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger('Angular')" [ngClass]="{active : frameWork === 'Angular'}">
+            Angular
+        </a>
+    </li>
+    <li class="nav nav-item">
+        <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger('React')" [ngClass]="{active : frameWork === 'React'}">
+            React
+        </a>
+    </li>
+    <li class="nav nav-item">
+        <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger('Vue')" [ngClass]="{active : frameWork === 'Vue'}">
+            Vue
+        </a>
+    </li>
+
+</ul>
+
+
+
+<div class="tabs-body">
+    <div class="card">
+        <div class="card-body" *ngIf="frameWork.toLowerCase().trim() === 'angular'">
+            <p>
+               <strong>Angular</strong> you're taking advantage of a platform that can scale from single-developer
+                projects to enterprise-level applications. Angular is designed to make updating as straightforward
+                 as possible, so take advantage of the latest developments with minimal effort. Best of all, the 
+                 Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors,
+                  and content creators.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" *ngIf="frameWork.toLowerCase().trim() === 'react'">
+            <p>
+                <strong>React</strong> is a library for building composable user interfaces. It encourages 
+                the creation of reusable UI components, which present data that changes over time. Lots of 
+                people use React as the V in MVC. React abstracts away the DOM from you, offering a simpler
+                 programming model and better performance. React can also render on the server using Node,
+                 and it can power native apps using React Native. React implements one-way reactive data 
+                 flow, which reduces the boilerplate and is easier to reason about than traditional data
+                  binding.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" *ngIf="frameWork.toLowerCase().trim() === 'vue'">
+            <p>
+                <strong>Vue</strong>  is a JavaScript framework for building user interfaces. It builds 
+                on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based 
+                programming model that helps you efficiently develop user interfaces, be they simple
+                 or complex.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 2 -->
+<!-- <ul class="nav nav-pills">
+    <li class="nav nav-item"> -->
+        <!--(OR) <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger($event)" -->
+         <!-- <a href="javascript:;" class="nav-link" (click)="frameWork = 'angular'"
+         [ngClass]="{active : frameWork.toLowerCase().trim() === 'angular'}">
+            Angular
+        </a> 
+    </li> -->
+    <!-- <li class="nav nav-item">  -->
+        <!--(OR)- <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger($event)"  -->
+        <!-- <a href="javascript:;" class="nav-link" (click)="frameWork = 'react'" 
+        [ngClass]="{active : frameWork.toLowerCase().trim() === 'react'}">
+            React
+        </a>
+    </li> -->
+    <!-- <li class="nav nav-item"> -->
+        <!--(OR)- <a href="javascript:;" class="nav-link" (click)="onFrameWorkChanger($event)"  -->
+        <!-- <a href="javascript:;" class="nav-link" (click)="frameWork = 'vue'" 
+        [ngClass]="{active : frameWork.toLowerCase().trim() === 'vue'}">
+            Vue
+        </a>
+    </li>
+
+</ul>  -->
+
+<!-- 2 -->
+<!-- <div class="tabs-body"  [ngSwitch]="frameWork.toLowerCase().trim()">
+    <div class="card" *ngSwitchCase="'angular'">
+        <div class="card-body">
+            <p>
+               <strong>Angular</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ea, hic? Magnam possimus sequi quia tempore? Rem tenetur
+                 beatae itaque  in!
+            </p>
+        </div>
+    </div>
+    <div class="card" *ngSwitchCase="'react'">
+        <div class="card-body">
+            <p>
+                <strong>React</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ea, hic? Magnam possimus sequi quia tempore? Rem tenetur
+                 beatae itaque  in!
+            </p>
+        </div>
+    </div>
+    <div class="card" *ngSwitchCase="'vue'">
+        <div class="card-body">
+            <p>
+                <strong>Vue</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ea, hic? Magnam possimus sequi quia tempore? Rem tenetur
+                 beatae itaque  in!
+            </p>
+        </div>
+    </div>
+</div> -->

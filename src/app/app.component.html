@@ -1,0 +1,121 @@
+
+<!-- <h1 class="bg-primary text-white p-4">Basics</h1>
+<div class="container m-4">
+  <div class="row">
+    <div class="col-sm-12"> -->
+      
+      <!-- <button class="btn btn-primary">click</button> -->
+      <!-- <app-product></app-product>
+      
+      <app-tab></app-tab>
+      <hr>
+      
+      
+      
+       <div app-products></div> -->
+      <!-- <div class="app-products"></div> -->
+     <!-- <input type="text" (keyup)="onhandlerMsg($event)"> -->
+      
+      <!-- <app-inputdecoretor [inputmsgfromparent]="value"></app-inputdecoretor> -->
+         
+         <!-- <app-child (getMsgFromChild)="onMsgFromChild($event)"></app-child> -->
+      <!-- <app-samsung></app-samsung>
+      <app-samsungprod></app-samsungprod>
+      <app-nokia></app-nokia>
+      <app-NokiaProd></app-NokiaProd>
+      <app-Laptop></app-Laptop> -->
+
+      <!-- directives
+        Which gives instruction to the Dom
+        1)component
+        2)Attribute Directives;-
+          ngstyle,ngclass
+
+        3)structural Directives:-
+          ngif
+      
+      -->
+      
+
+    <!-- </div>
+  </div>
+</div> -->
+     
+
+
+<!--struc directive 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      
+      <app-product></app-product>
+      <app-products></app-products> 
+      <app-skillsets></app-skillsets>
+      
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <app-inputdecoretor [inputmsgfromparent]="inputmsgforchild"></app-inputdecoretor>
+      <app-child [msgfromparent]="msgforchild"></app-child>
+      <p class="ml-2 p-2">{{msgfromchild}}</p>
+      <app-output-dec (getmsgfromchild)="onmsgfromchild($event)"></app-output-dec>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="ml-2 p-2" [ngStyle]="{color: 'gold'}">{{productsatus}}</p>
+      <app-output-decorator (productstatus)="onstatusHandler($event)"></app-output-decorator>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="p-2" [ngStyle]="{color: 'orange'}">{{getstatu}}</p>
+      <app-output-prod (getstatus)="ongetstatus($event)"></app-output-prod>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p [ngStyle]="{color: '#787675'}">{{onmsg}}</p>
+      <app-outputdecexam (msgfromch)="onmsgfromch($event)"></app-outputdecexam>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container mb-4">
+  <h2 class="bg-info p-2 text-center text-white">Tab By using NgIf</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-tab></app-tab>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-4">
+  <h2 class="bg-warning p-2 text-center text-white">Tab By using NgSwitch</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-tab-ngswitch></app-tab-ngswitch>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="bg-secondary p-2 text-center text-white">Card</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card></app-card>
+    </div>
+  </div>
+</div> -->

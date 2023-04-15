@@ -1,0 +1,45 @@
+
+<!-- 5.2 ng style-->
+<!-- <p [ngStyle]="{backgroundColor : getBgColor()}"> -->
+<p [ngStyle]="{backgroundColor : isProductAvailable ? 'orange' : '#ccc'}"
+    [ngClass]="{
+        'text-white' : isProductAvailable,
+        'p-4' : isProductAvailable,
+        'p-2' : !isProductAvailable,
+        'text-danger' : !isProductAvailable
+    }">
+    the product is {{pName}} with Id {{pId}} and Satus is {{pStatus}} and 
+    <!-- <strong *ngIf="isProductAvailable">The product is available</strong>
+    <strong *ngIf="!isProductAvailable">The product is not  available</strong>  <-##### OR #####->-->
+
+        <!-- [ngClass="{className : conditionForClassToBeAdd }"] -->
+               
+     <strong *ngIf="isProductAvailable;  else productnotavailable ">The product is available</strong>
+    <ng-template #productnotavailable>
+        <strong> and The product is Not Available</strong>
+    </ng-template>
+</p>
+
+<!-- 
+<button class="btn btn-primary mb-4" [disabled]='isDisbled'>Add product</button>
+<input type="text" [value]="pName" class="form-control mb-4"> -->
+
+<!-- 
+<p class="info">
+    the product is {{pName}} with Id {{pId}} and Satus is {{pStatus}}
+</p>
+
+
+
+<p class="info">
+    the product is {{pName}} with {{getproduct()}} 123 and Satus is {{pStatus}}
+</p>
+
+<p [innerHTML]="pName">
+    
+</p> -->
+
+
+<!-- <p [innerHTML]="'Iphone'">
+    
+</p>  -->

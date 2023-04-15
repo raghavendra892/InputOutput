@@ -1,0 +1,14 @@
+
+
+.text{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+.text:hover{
+    overflow: visible; 
+    white-space: normal;
+   // height:auto; 
+    transition: all 1.2s ease-in-out;
+}

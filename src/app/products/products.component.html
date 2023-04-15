@@ -1,0 +1,91 @@
+
+<!-- <div class="form-group">
+    <label for="">Product search</label>
+    <input type="text" class="form-control mb-4"
+         (input)="onkeyup($event)"> -->
+    <!--OR <input type="text" class="form-control mb-4" 
+    (keyup)="onkeyup($event)"> -->
+<!-- </div> -->
+
+
+<div class="form-group">
+    <label for="">Product search</label>
+    <input type="text" class="form-control mb-4" 
+    [(ngModel)] = "searchproductName">
+    
+</div>
+
+<p>
+    {{searchproductName}}
+</p>
+<!-- 5.1 -->
+<button class="btn btn-primary mb-4 mr-4" [disabled]='isDisbled' (click)="getProductStatus()">Add product</button>
+<button class="btn btn-primary mb-4" [disabled]='noOfproduct === 0' (click)="onProductReamove()">Remove product</button>
+<p class="alert alert-info mb-4">
+    {{productsStatus}}
+</p>
+
+
+
+
+
+
+
+
+
+
+<!---###########################  4th ####################################-->
+
+<!-- 3 -->
+<!-- <div class="form-group">
+    <label for="">Product search</label> -->
+    <!-- <input type="text" class="form-control mb-4"
+         (input)="onkeyup($event)"> -->
+    <!-- <input type="text" class="form-control mb-4" 
+    (keyup)="onkeyup($event)">
+</div>
+
+
+
+<div class="form-group">
+    <label for="">Product search</label>
+    <input type="text" class="form-control mb-4" 
+    [(ngModel)] = "searchproductName">
+    
+</div>
+
+
+<p>
+    {{searchproductName}}
+</p> -->
+<!-- 2 -->
+<!-- <button class="btn btn-primary mb-4" [disabled]='isDisbled' (click)="getProductStatus()">Add product</button>
+<p class="alert alert-info mb-4">
+    {{productsStatus}}
+</p> -->
+
+<!-- 4 -->
+<!-- <p [ngStyle]="{backgroundColor : getBgColor()}"> -->
+<!-- <p [ngStyle]="{'background-color' : getBgColor()}">
+    the product is samsung with Id 123 and Satus is in transition
+</p> -->
+<!-- //1 -->
+<!-- <input type="text" class="form-control mb-4" (input)="onkeyup($event)"> -->
+
+
+
+<!-- (((((2,3)))))))<div class="form-group">
+    <label for="">Product search</label> -->
+    <!-- <input type="text" class="form-control mb-4" (input)="onkeyup($event)"> -->
+    <!-- <input type="text" class="form-control mb-4" (keyup)="onkeyup($event)">
+</div>
+<p>
+    {{searchproductName}}
+</p> -->
+<!-- 2 -->
+<!-- <button class="btn btn-primary mb-4" [disabled]='isDisbled' (click)="getProductStatus()">Add product</button>
+<p class="alert alert-info mb-4">
+    {{productsStatus}}
+</p> -->
+
+
